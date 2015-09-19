@@ -1,1 +1,2 @@
-# craigslist_redesign
+# My Craigslist Redesign 
+It was a group project
