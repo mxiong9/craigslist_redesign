@@ -1,117 +1,394 @@
 <html>
 	<head>
-		<title>Modern newly renovated 1br 1bath w/parking</title>
+		<title>housing</title>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="assets/css/style 3.css">
+		<link rel="stylesheet" href="assets/css/style 2.css">
 	</head>
 
 	<body>
-		<div id="top_container">
-			<div class="float" id="logo_container">
+
+		<div id="top-container">
+
+			<div class="float" id="logo-container">
 				<img class="float" id="logo" src="assets/img/Craigslist Final Logo Purple2.png">
 			</div>
 
-				<div class="float" id="searchbar"> 
-					<input class="float" id="search_input" type="text" placeholder="search">
-					<div class="float" id="search_button">
-						<img id="search_icon" src="assets/img/white search.png">
+			<div class="float" id="searchbar"> 
+				<input class="float" id="search-input" type="text" placeholder="search">
+				<div class="float" id="search-button">
+					<img id="search-icon" src="assets/img/white search.png">
+				</div>
+			</div>
+
+			<div class="float" id="post-button">
+				post
+			</div>
+
+		</div>
+
+		<div id="map-container">
+
+			<img id="map" src="assets/img/san fran map.jpg">
+
+			<div class="hover-container" id="hover-container-right">
+				<img class="pindrop" id="icon-right" src="assets/img/location purple.png">
+				<div class="hover-box" id="hover-box-right">
+					<img class="hover-pic" id="hover-pic-right" src="assets/img/tile-four.jpg">
+					<div class="hover-text" id="hover-text-right"> 
+						<div class="number"> 4. </div>
+						<div class="heading"> 1BR/1BA Apartment </div>
+						<div class="price"> $2150 - </div>
+						<div class="location"> Russian Hill </div>
+					</div>
+					<div class="hover-arrow"> </div>
+				</div>
+			</div>
+
+			<div class="hover-container" id="hover-container-left">
+				<img class="pindrop" id="icon-left" src="assets/img/location purple.png">
+				<div class="hover-box" id="hover-box-left">
+					<img class="hover-pic" id="hover-pic-left" src="assets/img/tile-nine.jpg">
+					<div class="hover-text" id="hover-text-left"> 
+						<div class="number"> 9. </div>
+						<div class="heading"> 3BR/3BA Apartment </div>
+						<div class="price"> $7495 - </div>
+						<div class="location"> Marina District </div>
+					</div>
+					<div class="hover-arrow"> </div>
+				</div>
+			</div>
+
+
+			<div id="filter-container">
+
+				<div class="filter" id="heading"> 
+					Narrow Your Search:
+				</div>
+
+				<div class="filter" id="housing">
+					<div class="title"> 
+						Housing Type:
+					</div>
+					<div id="housing-checkboxes">
+						<div id="first-line">
+							<input class="check box" id="checkbox-apt" type="checkbox">
+							<div class="check details" id="apt"> apartments </div>
+						</div>
+						<div id="second-line">
+							<input class="check box" id="checkbox-house" type="checkbox">
+							<div class="check details" id="houses"> houses </div>
+						</div>
 					</div>
 				</div>
-				<div class="float" id="post_button">
-				post</div>
+
+				<div class="filter" id="price">
+					<div class="title">
+						Price:
+					</div>
+					<div class="slidebar-container" id="price-slidebar">
+						<div class="slidebar-spine" id="price-spine">
+							<div class="slidebar-range" id="price-range"> </div>
+								<div class="slidebar-box" id="price-box1"> </div>
+								<div class="slidebar-box" id="price-box2"> </div>
+						</div>
+						<div class="slidebar-text" id="price-text">
+							<div class="number" id="min-price"> $100 </div>
+							<div class="number" id="max-price"> $8000 </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="filter" id="bedrooms">
+					<div class="title">
+						Bedrooms:
+					</div>
+					<div class="slidebar-container" id="bedrooms-slidebar">
+						<div class="slidebar-spine" id="bedrooms-spine">
+							<div class="slidebar-range" id="bedrooms-range"> </div>
+								<div class="slidebar-box" id="bedrooms-box1"> </div>
+								<div class="slidebar-box" id="bedrooms-box2"> </div>
+						</div>
+						<div class="slidebar-text" id="bedrooms-text">
+							<div class="number" id="min-bedrooms"> 1 </div>
+							<div class="number" id="max-bedrooms"> 3 </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="filter" id="bathrooms">
+					<div class="title">
+						Bathrooms:
+					</div>
+					<div class="slidebar-container" id="bathrooms-slidebar">
+						<div class="slidebar-spine" id="bathrooms-spine">
+							<div class="slidebar-range" id="bathrooms-range"> </div>
+								<div class="slidebar-box" id="bathrooms-box1"> </div>
+								<div class="slidebar-box" id="bathrooms-box2"> </div>
+						</div>
+						<div class="slidebar-text" id="bathrooms-text">
+							<div class="number" id="min-bathrooms"> 1 </div>
+							<div class="number" id="max-bathrooms"> 4 </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="filter" id="column-one">
+					<div class="title">
+						More Options:
+					</div>
+					<div class="line-one">
+						<input class="check box" id="checkbox-img" type="checkbox">
+						<div class="check details" id="img"> has images </div>
+					</div>
+					<div class="line-two">
+						<input class="check box" id="checkbox-posted" type="checkbox">
+						<div class="check details" id="posted"> posted </div>
+					</div>
+				</div>
+
+				<div class="filter" id="column-two">
+					<div class="line-one">
+						<input class="check box" id="checkbox-sublet" type="checkbox">
+						<div class="check details" id="sublet"> sublet </div>
+					</div>
+					<div class="line-two">
+						<input class="check box" id="checkbox-pets" type="checkbox">
+						<div class="check details" id="pets"> pets allowed </div>
+					</div>
+				</div>
+
+				<div class="filter" id="filter-button">
+					filter
+				</div>
+
+			</div>
 		</div>
 
-		<div id="display_photos">
-			<div class="main" id="living_room">
-				<img class="ephoto" id="living_room" src="assets/img/ap_livingroom.jpg">
+		<div id="gallery-container">
+			<div class="gallery-row" id="row-one"> 
+
+				<div class="whole-container" id="first-item">
+					<div class="picture-container">
+						<img class="tile-img" id="tile-img1" src="assets/img/tile-one.jpg">
+						<div class="number-tile">
+							1.
+						</div>
+						<div class="price-tile">
+							$2278/m
+						</div>
+					</div>
+					<div class="text-container">
+						<div class="gallery-heading">
+							1BR/1BA Apartment
+						</div>
+						<div class="gallery-location">
+							San Jose
+						</div>
+					</div>
+				</div>
+
+				<div class="whole-container" id="second-item">
+					<div class="picture-container">
+						<img class="tile-img" id="tile-img2" src="assets/img/tile-two.jpg">
+						<div class="number-tile">
+							2.
+						</div>
+						<div class="price-tile">
+							$1700/m
+						</div>
+					</div>
+					<div class="text-container">
+						<div class="gallery-heading">
+							2BR/2BA Apartment
+						</div>
+						<div class="gallery-location">
+							Alamo Square
+						</div>
+					</div>
+				</div>
+
+				<div class="whole-container" id="third-item">
+					<div class="picture-container">
+						<img class="tile-img" id="tile-img3" src="assets/img/tile-three.jpg">
+						<div class="number-tile">
+							3.
+						</div>
+						<div class="price-tile">
+							$1125/m
+						</div>
+					</div>
+					<div class="text-container">
+						<div class="gallery-heading">
+							1BR Apartment
+						</div>
+						<div class="gallery-location">
+							Twin Peaks
+						</div>
+					</div>
+				</div>
+
 			</div>
 
-			<div class="ephoto" id="hallway">
-				<img class="ephoto" id="hallway" src="assets/img/ap_hallway.png">
+			<div class="gallery-row" id="row-two">
+				<div class="whole-container" id="fourth-item">
+					<div class="picture-container">
+						<img class="tile-img" id="tile-img4" src="assets/img/tile-four.jpg">
+						<div class="number-tile">
+							4.
+						</div>
+						<div class="price-tile">
+							$2150/m
+						</div>
+					</div>
+					<div class="text-container">
+						<div class="gallery-heading">
+							1BR/1BA Apartment
+						</div>
+						<div class="gallery-location">
+							Russian Hill
+						</div>
+					</div>
+				</div>
+
+				<div class="whole-container" id="fifth-item">
+					<div class="picture-container">
+						<img class="tile-img" id="tile-img5" src="assets/img/tile-five.jpg">
+						<div class="number-tile">
+							5.
+						</div>
+						<div class="price-tile">
+							$4208/m
+						</div>
+					</div>
+					<div class="text-container">
+						<div class="gallery-heading">
+							2BR/2BA Apartment
+						</div>
+						<div class="gallery-location">
+							South Beach
+						</div>
+					</div>
+				</div>
+
+				<div class="whole-container" id="sixth-item">
+					<div class="picture-container">
+						<img class="tile-img" id="tile-img6" src="assets/img/tile-six.jpg">
+						<div class="number-tile">
+							6.
+						</div>
+						<div class="price-tile">
+							$3195/m
+						</div>
+					</div>
+					<div class="text-container">
+						<div class="gallery-heading">
+							1BR/1BA Apartment
+						</div>
+						<div class="gallery-location">
+							Downtown SF
+						</div>
+					</div>
+				</div>
 			</div>
 
-			<div class="ephoto" id="bathroom">
-				<img class="ephoto" id="bathroom" src="assets/img/ap_bathroom.jpg">
-			</div>
+			<div class="gallery-row" id="row-three">
+				<div class="whole-container" id="seventh-item">
+					<div class="picture-container">
+						<img class="tile-img" id="tile-img7" src="assets/img/tile-seven.jpg">
+						<div class="number-tile">
+							7.
+						</div>
+						<div class="price-tile">
+							$4428/m
+						</div>
+					</div>
+					<div class="text-container">
+						<div class="gallery-heading">
+							2BR/2BA Apartment
+						</div>
+						<div class="gallery-location">
+							South Beach
+						</div>
+					</div>
+				</div>
 
-			<div class="ephoto" id="outside">
-				<img class="ephoto" id="outside" src="assets/img/ap_outside.jpg">
-			</div>
+				<div class="whole-container" id="eigth-item">
+					<div class="picture-container">
+						<img class="tile-img" id="tile-img8" src="assets/img/tile-eight.jpg">
+						<div class="number-tile">
+							8.
+						</div>
+						<div class="price-tile">
+							$1750/m
+						</div>
+					</div>
+					<div class="text-container">
+						<div class="gallery-heading">
+							1BR/1BA Apartment
+						</div>
+						<div class="gallery-location">
+							Bernal Heights
+						</div>
+					</div>
+				</div>
 
-			<div class="ephoto" id="kitchen">
-				<img class="ephoto" id="kitchen" src="assets/img/ap_kitchen.jpg">
-			</div>
-
-			<div class="ephoto" id="bedroom">
-				<img class="ephoto" id="bedroom" src="assets/img/ap_bedroom.jpg">
+				<div class="whole-container" id="ninth-item">
+					<div class="picture-container">
+						<img class="tile-img" id="tile-img9" src="assets/img/tile-nine.jpg">
+						<div class="number-tile">
+							9.
+						</div>
+						<div class="price-tile">
+							$7495/m
+						</div>
+					</div>
+					<div class="text-container">
+						<div class="gallery-heading">
+							3BR/3BA Apartment
+						</div>
+						<div class="gallery-location">
+							Marina District
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div id="title_box">
-			<div class="title_box" id="title">Modern newly renovated 1br 1bath w/parking</div>
-			<div class="title_box" id="date">Available June 21</div>
+		<div id="navbar">
+			<div class="item button" id="prev">
+				prev
+			</div>
+			<div class="item" id="page-number">
+				1 out of 100
+			</div>
+			<div class="item button" id="next">
+				next
+			</div> 
 		</div>
 
-		<div id="small_description_box">
-			<div class="small_discription_box" id="location">Location: Civic Center, San Fransisco</div>
-			<div class="small_discription_box" id="price">Price: $1700/mn</div>
-			<div class="small_discription_box" id="type">Type: Apartment</div>
-			<div class="small_discription_box" id="bed">Bed: 1</div>
-			<div class="small_discription_box" id="bath">Bath: 1.5</div>
-			<div class="small_discription_box" id="bath">Type: Apartment</div>
-			<div class="small_discription_box" id="pets">Pets: No</div>
-			<div class="contact_button" id="contact_container"></div>
-			<div class="contact_button" id="contact_button">contact</div>
-		</div>
-
-	<div id="map">
-			<div class="map" id="map">
-				<img id="map" src="assets/img/san_fran_clipped.jpg">
-			</div>
-		</div>
-	</div>
-	<div id="large_description">
-			<div class="desc_title" id="desc">Description:</div>
-			<div id="desc_body">Remodeled 1 bedroom apartment in the desirable Cow Hollow neighborhood. This apartment is in a great location, close to shops and restaurants on Union St., Chestnut St., and Lombard St. and is walking distance to the farmer's market.</div>
-			<div class="desc_title" id="body_title">Apartment Features:</div>
-			<div class="desc_body" id="body"> Newly remodeled kitchen with pull out cabinets, quartz countertop, Heath Tile backsplash, new stove and microwave oven.<br>Remodeled bathroom with new vanity cabinet, porcelain tiled floors and medicine cabinet.<br>Lots of closet space in the entryway, and along the hall Large closet also in the bedroom Garage parking included Laundry facilities on site.
-			<br>Elevator in building This unit is on the 1st floor of a 3 story 12 unit building on Greenwich St.
-			<br>Sorry no pets allowed. 
-			<br>Apartment is available June 21 and these are advance preview pics.<br>
-			$3500 Security deposit<br>
-			Showing on Sat. 3/14 between 2:00 - 3:00
-			<div class="desc_body" id="closer">Please call for an appointment.
-			</div>
-		</div>
-	</div>
-		<ul id="bottom_bar">
-			<li class="bottom_bar_item">&#169 2015 craigslist</li>
-			<li class="bottom_bar_item">help</li>
-			<li class="bottom_bar_item">safety</li>
-			<li class="bottom_bar_item">privacy</li>
-			<li class="bottom_bar_item">feedback</li>
-			<li class="bottom_bar_item">craigslist jobs</li>
-			<li class="bottom_bar_item">terms</li>
-			<li class="bottom_bar_item">about</li>
-			<li class="bottom_bar_item">
-				<select id="change_languages">
-					<option value="deutsch">deutsch</option>
-					<option selected="" value="english">english</option>
-					<option value="español">espa&#241ol</option>
-					<option value="filipino">filipino</option>
-					<option value="français">fran&#231ais</option>
-					<option value="italiano">italiano</option>
-					<option value="português">portugu&#234s</option>
-					<option value="svenska">svenska</option>
-					<option value="türkçe">t&#252rk&#231e</option>
-				</select>
-			</li>
+		<ul id="bottom-bar">
+				<li class="bottom-bar-item">&#169 2015 craigslist</li>
+				<li class="bottom-bar-item">help</li>
+				<li class="bottom-bar-item">safety</li>
+				<li class="bottom-bar-item">privacy</li>
+				<li class="bottom-bar-item">feedback</li>
+				<li class="bottom-bar-item">craigslist jobs</li>
+				<li class="bottom-bar-item">terms</li>
+				<li class="bottom-bar-item">about</li>
+				<li class="bottom-bar-item">
+					<select id="change-languages">
+						<option value="deutsch">deutsch</option>
+						<option selected="" value="english">english</option>
+						<option value="español">espa&#241ol</option>
+						<option value="filipino">filipino</option>
+						<option value="français">fran&#231ais</option>
+						<option value="italiano">italiano</option>
+						<option value="português">portugu&#234s</option>
+						<option value="svenska">svenska</option>
+						<option value="türkçe">t&#252rk&#231e</option>
+					</select>
+				</li>
 		</ul>
+
 	</body>
 </html>
-
-
-
-
-
